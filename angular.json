@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ng-spc": {
+      "projectType": "library",
+      "root": "projects/ng-spc",
+      "sourceRoot": "projects/ng-spc/src",
+      "prefix": "xfu",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-spc/tsconfig.lib.json",
+            "project": "projects/ng-spc/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-spc/src/test.ts",
+            "tsConfig": "projects/ng-spc/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-spc/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-spc/tsconfig.lib.json",
+              "projects/ng-spc/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "ng-spc"
+}

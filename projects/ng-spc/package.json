@@ -1,0 +1,28 @@
+{
+  "name": "ng-spc",
+  "version": "0.0.9",
+  "description": "ng-spc is an Angular component for Sliding puzzle captcha",
+  "author": "Kelvin Dong <bandgapcn@hotmail.com>",
+  "homepage": "https://github.com/KelvinDong/ng-spc",
+  "peerDependencies": {   
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KelvinDong/ng-spc"
+  },
+  "bugs": {
+    "url": "https://github.com/KelvinDong/ng-spc/issues"
+  },
+  "keywords": [
+    "angular",
+    "puzzle",
+    "captcha",
+    "xfunction"
+  ],
+  "contributors": [
+    {
+      "name": "Kelvin"
+    }
+  ]
+}
